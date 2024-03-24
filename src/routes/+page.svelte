@@ -16,7 +16,7 @@
 
 <svelte:window bind:innerHeight={y} bind:innerWidth={x} />
 <!-- hero -->
-<div class="hero min-h-screen" style="background-image: url(tzu_shao_hero.jpg);">
+<div class="hero  min-h-screen object-contain" style="background-image: url(tzu_shao_hero.jpg);">
 	<div class="hero-overlay bg-opacity-60"></div>
 	<div class="hero-content text-center text-neutral-content">
 		<div class="max-w-md">
