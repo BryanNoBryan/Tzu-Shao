@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
-/build
+# /build  hey, we're not that serious about perfect code
 /.svelte-kit
 /package
 .env
