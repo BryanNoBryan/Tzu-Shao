@@ -3,7 +3,7 @@
 
 	import 'tailwindcss/tailwind.css';
 </script>
-
+ 
 <div class="navbar bg-base-100 w-full">
 	<div class="navbar-start">
 		<div class="dropdown">
