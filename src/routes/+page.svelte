@@ -1,22 +1,21 @@
 <script>
 	// @ts-nocheck
-    import Carousel from "$lib/carousel.svelte";
+	import Carousel from '$lib/carousel.svelte';
 
 	let x;
 	let y;
 
 	const images = [
-		'https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg',
-		'https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg',
-		'https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg',
-		'https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg'
+		'https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=600',
+		'https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=600',
+		'https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=600',
+		'https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=600'
 	];
-
 </script>
 
 <svelte:window bind:innerHeight={y} bind:innerWidth={x} />
 <!-- hero -->
-<div class="hero  min-h-screen" style="background-image: url(tzu_shao_hero.jpg);">
+<div class="hero min-h-screen" style="background-image: url(tzu_shao_hero.jpg);">
 	<div class="hero-overlay bg-opacity-60"></div>
 	<div class="hero-content text-center text-neutral-content">
 		<div class="max-w-md">
@@ -38,7 +37,36 @@
 	>
 		Our Activities
 	</h2>
-	<Carousel></Carousel>
+	<div class="carousel w-full">
+		<div id="slide1" class="carousel-item relative w-full">
+			<img src="src/lib/ocean.jpg" class="w-full" />
+			<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+				<a href="#slide4" class="btn btn-circle">❮</a>
+				<a href="#slide2" class="btn btn-circle">❯</a>
+			</div>
+		</div>
+		<div id="slide2" class="carousel-item relative w-full">
+			<img src="src/lib/ocean.jpg" class="w-full" />
+			<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+				<a href="#slide1" class="btn btn-circle">❮</a>
+				<a href="#slide3" class="btn btn-circle">❯</a>
+			</div>
+		</div>
+		<div id="slide3" class="carousel-item relative w-full">
+			<img src="src/lib/ocean.jpg" class="w-full" />
+			<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+				<a href="#slide2" class="btn btn-circle">❮</a>
+				<a href="#slide4" class="btn btn-circle">❯</a>
+			</div>
+		</div>
+		<div id="slide4" class="carousel-item relative w-full">
+			<img src="src/lib/ocean.jpg" class="w-full" />
+			<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+				<a href="#slide3" class="btn btn-circle">❮</a>
+				<a href="#slide1" class="btn btn-circle">❯</a>
+			</div>
+		</div>
+	</div>
 </div>
 
 <!-- body -->
@@ -52,10 +80,7 @@
 		<div class="flex w-full">
 			<div class="card w-96 bg-base-100 shadow-xl">
 				<figure>
-					<img
-						src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-						alt="Shoes"
-					/>
+					<img src="src/lib/ocean.jpg" alt="Shoes" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">Shoes!</h2>
@@ -68,10 +93,7 @@
 			<div class="divider divider-horizontal"></div>
 			<div class="card w-96 bg-base-100 shadow-xl">
 				<figure>
-					<img
-						src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-						alt="Shoes"
-					/>
+					<img src="src/lib/ocean.jpg" alt="Shoes" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">Shoes!</h2>
@@ -84,10 +106,7 @@
 			<div class="divider divider-horizontal"></div>
 			<div class="card w-96 bg-base-100 shadow-xl">
 				<figure>
-					<img
-						src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-						alt="Shoes"
-					/>
+					<img src="src/lib/ocean.jpg" alt="Shoes" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">Shoes!</h2>
@@ -100,10 +119,7 @@
 			<div class="divider divider-horizontal"></div>
 			<div class="card w-96 bg-base-100 shadow-xl">
 				<figure>
-					<img
-						src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-						alt="Shoes"
-					/>
+					<img src="src/lib/ocean.jpg" alt="Shoes" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">Shoes!</h2>
@@ -118,10 +134,7 @@
 		<div class="grid grid-cols-2 gap-4">
 			<div class="card w-48 bg-base-100 shadow-xl">
 				<figure>
-					<img
-						src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-						alt="Shoes"
-					/>
+					<img src="src/lib/ocean.jpg" alt="Shoes" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">Medicine</h2>
@@ -133,10 +146,7 @@
 			</div>
 			<div class="card w-48 bg-base-100 shadow-xl">
 				<figure>
-					<img
-						src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-						alt="Shoes"
-					/>
+					<img src="src/lib/ocean.jpg" alt="Shoes" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">Charity</h2>
@@ -148,10 +158,7 @@
 			</div>
 			<div class="card w-48 bg-base-100 shadow-xl">
 				<figure>
-					<img
-						src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-						alt="Shoes"
-					/>
+					<img src="src/lib/ocean.jpg" alt="Shoes" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">Culture</h2>
@@ -163,10 +170,7 @@
 			</div>
 			<div class="card w-48 bg-base-100 shadow-xl">
 				<figure>
-					<img
-						src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-						alt="Shoes"
-					/>
+					<img src="src/lib/ocean.jpg" alt="Shoes" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">Education</h2>
@@ -188,7 +192,7 @@
 	</h2>
 	<div class="avatar">
 		<div class="w-24 rounded">
-			<img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+			<img src="src/lib/ocean.jpg" />
 		</div>
 	</div>
 	<p class="text-lg font-medium text-gray-900 dark:text-white">Name</p>
